@@ -18,9 +18,9 @@ The precision parameter should be set between 0 and 8. The number of different s
 
 ![gradient_circle_LUT_prec5](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/3a11a2cb-0792-429b-952a-574a59623923)
 
-#### Precision = 1:
+#### Precision = 2:
 
-![gradient_circle_LUT_prec1](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/69717db6-1f43-455f-8639-1834cda6bbcf)
+![gradient_circle_LUT_prec2](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/69717db6-1f43-455f-8639-1834cda6bbcf)
 
 ## Render examples
 ### Outwards gradient circle
