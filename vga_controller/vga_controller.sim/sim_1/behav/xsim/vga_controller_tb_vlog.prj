@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vga_controller.srcs/sources_1/new/ppm_file_writer.v" \
+"../../../../vga_controller.srcs/sources_1/new/px_generation.v" \
+"../../../../vga_controller.srcs/sources_1/new/vga_controller.v" \
+"../../../../vga_controller.srcs/sources_1/new/vga_controller_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
