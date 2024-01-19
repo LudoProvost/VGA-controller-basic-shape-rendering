@@ -5,6 +5,7 @@ Simple VGA controller made in verilog which writes to an output.txt file in PPM 
 1. Change the path to the output.txt on line 19 of ppm_file_writer.v
 2. Select which shape you want generated in vga_controller_tb.v (line 76, 78, 80)
 3. Color values can be changed as explained thoroughly in the testbench.
+4. (OPTIONAL) To use the python scrypt to get the PNG from the PPM, change the path on line 4 of VGA_px_gen_debug.py to point to the same output.txt of the ppm_file_writer.
 
 ### Using different precision for gradient circle
 The precision parameter should be set between 0 and 8. The number of different shades will be given by 2^precision. Shown below is the same gradient circle but with different precision levels.
