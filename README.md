@@ -1,6 +1,10 @@
 # VGA controller with basic shape rendering
 Simple VGA controller made in verilog which writes to an output.txt file in PPM format which can later be opened with the VGA_px_gen_debug.py python scrypt as a PNG.
 
+Without having access to an FPGA to test the VGA controller with, I decided to use $fwrite() in verilog to transform the R,G,B values from the pixel generation and the vsync and hsync values from the VGA_controller into an image in PPM format. The images generated below are generated from the outputs which would have been fed to a monitor through a VGA connection.
+
+![image](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/5bdae4c0-4caf-4dfd-ae9a-17356f749ebd)
+
 ## How to run
 1. Change the path to the output.txt on line 19 of ppm_file_writer.v
 2. Select which shape you want generated in vga_controller_tb.v (line 76, 78, 80)
@@ -80,3 +84,8 @@ Full sim:
 Zoomed in:
 
 ![sim_wf_zoomed](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/b9e6057a-5a5f-4681-84b3-5a8214cd7677)
+
+
+## Sources
+1. [Pixel generation lecture](https://people-ece.vse.gmu.edu/coursewebpages/ECE/ECE448/S15/viewgraphs/ECE448_lecture10_VGA_2.pdf)
+2. [8-bit VGA Controller detailed reference information by Altium](https://people-ece.vse.gmu.edu/coursewebpages/ECE/ECE448/S15/viewgraphs/ECE448_lecture10_VGA_2.pdf)
