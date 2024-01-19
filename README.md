@@ -9,13 +9,16 @@ Simple VGA controller made in verilog which writes to an output.txt file in PPM 
 ### Using different precision for gradient circle
 The precision parameter should be set between 0 and 8. The number of different shades will be given by 2^precision. Shown below is the same gradient circle but with different precision levels.
 
-Precision = 8:
+#### Precision = 8:
+
 ![gradient_circle_LUT_prec8](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/637e8141-7d59-4c3f-be5c-d89462b5553f)
 
-Precision = 5:
+#### Precision = 5:
+
 ![gradient_circle_LUT_prec5](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/3a11a2cb-0792-429b-952a-574a59623923)
 
-Precision = 1:
+#### Precision = 1:
+
 ![gradient_circle_LUT_prec1](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/69717db6-1f43-455f-8639-1834cda6bbcf)
 
 ## Render examples
@@ -29,6 +32,7 @@ The following gradient circle was generated with these values:
 + R = mid_i
 - G = mid_i
 * B = 255
+
 ![gradient_circle_LUT_prec8 (2)](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/915a84f9-1cd1-413b-baff-18105ff75210)
 
 ### Inwards gradient circle
@@ -41,6 +45,7 @@ The following gradient circle was generated with these values:
 + R = mid_i
 - G = 0
 * B = 0
+
 ![gradient_circle_LUT_prec8](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/f35397aa-2247-4954-a745-edff4802f455)
 
 ### Circle
@@ -51,6 +56,7 @@ The following circle was generated with these values:
 - R = 100
 * G = 255
 + B = 150
+
 ![image](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/2e77fa48-08d9-488d-96bc-67d9c0066eaa)
 
 ### Rectangle
@@ -62,11 +68,14 @@ The following rectangle was generated with these values:
 * R = 0
 + G = 255
 - B = 0
+
 ![rectangle](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/889cb368-8a97-4c8e-8a74-8f8a7e34bf5c)
 
 ## Simulation wave form example
 Full sim:
+
 ![sim_wf](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/139a596d-1d69-4c2f-a957-b18357251798)
 
 Zoomed in:
+
 ![sim_wf_zoomed](https://github.com/LudoProvost/VGA-controller-basic-shape-rendering/assets/70982826/b9e6057a-5a5f-4681-84b3-5a8214cd7677)
